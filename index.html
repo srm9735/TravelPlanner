@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png?v=2">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Travel Itinerary Planner 🌅🏙️</h1>
+    <h4 class="center">Schedule for Today</h4>
+    <section>
+        <input type="text" id="taskInputBox" placeholder="Add a task">
+        <button class="btnCenter" id="addTask">Add the task</button>
+    </section>
+    <section>
+        <ol class="simple-border" id="taskList"></ol>
+    </section>
+    <form action="https://www.google.com/maps" method="get" target="_blank" class="form-container">
+        <input type="text" name="q" placeholder="Search Terms"/>
+        <input type="hidden" name="entry" value="ttu">
+        <input type="hidden" name="hl" value="en">
+        <input type="hidden" name="t" value="t">
+        <input type="submit" value="Google Maps Search">
+    </form>
+    <form action="https://translate.google.com/" method="get" target="_blank" class="form-container">
+        <input type="text" name="q" placeholder="Search Terms"/>
+        <input type="hidden" name="entry" value="ttu">
+        <input type="hidden" name="hl" value="en">
+        <input type="hidden" name="t" value="t">
+        <input type="submit" value="Language Translator">
+    </form>
+    <h1 class="regular">Trip Budget Tracker 💵✈️</h1>
+<p>Enter your expenses below to track your trip's budget.</p>
+<h3 class="center"> Trip Budget: <span id="total" class="green">$1000.00</span></h3>
+<section class="center">
+    <input type="text" id="itemInput" placeholder="Enter Expense" class="inputBar">
+    <input type="text" id="amountInput" placeholder="Enter Amount" class="inputBar">
+    <select name="expenseOrIncome" id="expenseOrIncome">
+        <option value="expense">Expense</option>
+        <option value="income">Income</option>
+    </select>
+    <input type="submit" value="Add" class="submitButton">
+    <ul id="listOfItems">
+        <li class="green">Trip Budget: $1000.00</li>
+</body>
+
+</html>
